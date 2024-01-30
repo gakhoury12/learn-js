@@ -2,6 +2,7 @@ window.onload = function() {
     let x = document.getElementById('myBtn');
     x.addEventListener('mouseover', myFunction);
     x.addEventListener('click', mySecondFunction);
+    x.addEventListener('click', myForthFunction);
     x.addEventListener('mouseout', myThirdFunction);
 }
 
@@ -15,4 +16,8 @@ function mySecondFunction() {
 
 function myThirdFunction() {
     document.getElementById('demo').textContent = 'Moused out!';
+}
+
+function myForthFunction() {
+    console.log('forth function');
 }

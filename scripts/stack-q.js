@@ -6,6 +6,7 @@ class PStack {
   }
 
   showId() {
+    console.log(this);
     return this.#id;
   }
 
@@ -14,7 +15,6 @@ class PStack {
 class PStackImpl extends PStack {
   constructor() {
     super();
-    this.persons = [];
   }
   push(p) {
     return this.persons.push(p)
@@ -29,7 +29,7 @@ class PStackImpl extends PStack {
   }
 
 }
-
+//soemthign
 let pstack = new PStackImpl();
 pstack.push({name: 'Jojo', age: 21});
 pstack.push({name: 'Gabi', age: 29});
